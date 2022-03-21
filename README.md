@@ -5,7 +5,7 @@
 <br />
 
 ## Executive Summary
-
+In this project, we built a customer segmentation model that effectively predicts customer profiles. Insurance policy premiums should be dependent on the risk profile of customers, low-risk customers should pay a lower premium and high-risk customers should pay a higher premium. Applying modern machine learning techniques, we successfully established an unsupervised clustering model, that separates customers into four distinct profile groups. We then built a supervised segmentation classification model that predicts customer profiles on new customer data with 99% accuracy. By separating customers into four segments and sucessfully predicting their memebership, the insurance company will be able to effectively target different customers in terms of policy premiums, promotions and services, eventually improving profitability and shareholder value.
 
 <br />
 
@@ -73,7 +73,7 @@ Our goal is to build a clustering model that effectively segments customers into
 ### 3. The Evaluation Metrics 
 Common evaluation metrics for classfication models include: accuracy, precision, recall, F1-score, and lift/gain charts. While for clustering, popular metrics include silhouette coefficient and Rand scores. There is no single metric that fits all problems.
 
-The best metric to use will depend on the data and on the business problem that we are trying to solve. For our project, we will use accuracy for the classification model if cluster label distributions come out balanced, and we will use the F1-score if there exists large class imbalance in the cluster labels. For the clustering models, we will rely more on business intuitions rather than any particular statistical metric. Our goal is to identify customer segmentations that allow us to understand customer and risk profiles, therefore the models that provide clearer separation of customer groups in terms claims costs (a measure for risk) will be considered better models.
+The best metric to use will depend on the data and on the business problem that we are trying to solve. For our project, we will use accuracy score for the classification model if cluster label distributions come out balanced, and we will use the F1-score if there exists large class imbalance in the cluster labels. For the clustering models, we will rely more on business intuitions rather than on any particular statistical metric. Our goal is to identify customer segmentations that allow us to understand customer and risk profiles, therefore the models that provide clearer separation of customer groups in terms claims costs (as a proxy for risk) will be considered better models.
 
 
 <br />
@@ -85,7 +85,7 @@ The best metric to use will depend on the data and on the business problem that 
 ### 4. Definition of Success
 The insurer's current benchmark is charging $716.53 premium to all customers. This practice is clearly suboptimal.
 
-To be considered successful, our model should be able to identify at least 2 segments, one significantly below 716 dollars, while the other significantly above 716 dollars. With at least two segments like this, the insurer will be able to offer lower premiums to the low-risk customers, keeping the customers happy while still making a profit. The insurer will charge higher premiums to the high-risk group and will no longer be making a loss on them. Overall, the insurer will see an improvement in profitability.
+To be considered successful, our model should be able to identify at least 2 segments, one significantly below 716 dollars, while the other significantly above 716 dollars. With at least two segments like this, the insurer will be able to offer lower premiums to the low-risk customers, keeping the customers happy while still making a profit. The insurer will charge higher premiums to the high-risk group and will no longer be making a loss on them. Overall, the insurer should see an improvement in profitability.
 
 
 <br />
